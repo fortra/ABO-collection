@@ -1,10 +1,14 @@
 
-• ABO-SP:  Remote Heap Overflow, That section doesn't have execution permission.  There are two possible solutions, the first is to give execute permission to the section where our shellcode is.
+• ABO-SP:  Remote Heap Overflow, That section doesn't have execution permission.
+There are two possible solutions, the first is to give execute permission to the section where our shellcode is.
 The second is to copy the shellcode to another section that has execute permission, for this it is necessary to overwriting a pointer with an address that ends up calling to memcpy() 
 
 • ABO IO:  An integer overflow 
 
-• ABO USE AFTER FREE: An object is created and then deleted, thus the pointer to the object's function block is deleted. Then re-create another object of the same size. Since the pointer to the function block of the first object was previously removed, we can write
+• ABO USE AFTER FREE: An object is created and then deleted, thus the pointer to the object's function block is deleted.
+Then re-create another object of the same size. Since the pointer to the function block of the first object was previously removed, we can write
 any pointer that we control.
 
-• ABO USE AFTER FREE V2: (ConsoleApplication12SinASLR.exe) Similar to the previous one, but in this case we find an inconvenience: the size of the second object is different from the first, so it will not be located in the same memory space as the first object. Since the size is obtained from a file that we control, we can modify it and make it equal to that of the first object.
+• ABO USE AFTER FREE V2: (ConsoleApplication12SinASLR.exe) Similar to the previous one, but in this case we find an inconvenience:
+the size of the second object is different from the first, so it will not be located in the same memory space as the first object.
+Since the size is obtained from a file that we control, we can modify it and make it equal to that of the first object.
