@@ -1,11 +1,11 @@
 These exercises serve to become familiar with the tools, learn how the stack works,
 delve into assembly language, the hexadecimal number system, the "little endian" convention, among other things.
 
-•	  The stack1, stack2 and stack3 are similar. The student achieves the objective by filling a buffer
+• The stack1, stack2 and stack3 are similar. The student achieves the objective by filling a buffer
     to a certain place and validates a comparison to achieve the "YouWin" message.
-•	  Stack4 presents a new difficulty because the value with which it is compared contains a character that represents the 
+• Stack4 presents a new difficulty because the value with which it is compared contains a character that represents the 
     line break with which it will have to look for a different solution than the previous ones to achieve the objective.
-•	  Stack2 x64 is the same as stack2. This exercise is mainly used to show the difference between a program compiled
+• Stack2 x64 is the same as stack2. This exercise is mainly used to show the difference between a program compiled
     in 32bits and one in 64bits, as well as in the way arguments are passed to functions and to see the difference
     in size and number of registers with respect to systems. 32 bit.
 
