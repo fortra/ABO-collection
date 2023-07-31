@@ -5,3 +5,5 @@ delve into assembly language, the hexadecimal number system, the "little endian"
     to a certain place and validates a comparison to achieve the "YouWin" message.
 • Stack4 presents a new difficulty because the value with which it is compared contains a character that represents the 
     line break with which it will have to look for a different solution than the previous ones to achieve the objective.
+
+* Stack 5 is stack2 compiled in 64 bits.
