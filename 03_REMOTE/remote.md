@@ -1,1 +1,1 @@
-
+The REMOTE sections will serve to continue practicing and learning how to exploit memory corruption vulnerabilities in general, with the addition of starting to work with remote connections by sending packets through sockets. This section is interesting since with it we will be able to execute code remotely without the need for interaction from another user.
